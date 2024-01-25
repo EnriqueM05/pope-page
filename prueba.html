@@ -1,3 +1,14 @@
+<!--To dos
+Add a carousel with images of family
+Add a carousel with images of cars
+Add https://www.youtube.com/watch?v=gGuDNQbRQcg&ab_channel=CodingArtist
+"Video para ti" will be a coupon he can exchange for any song played by me in the drums recorded and
+published there:
+Make Video para ti pop up an image of the coupon 
+
+
+-->
+
 <!DOCTYPE html>
 <!-- Coding By CodingNepal - codingnepalweb.com -->
 <html lang="en">
@@ -7,29 +18,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Navigation Bar with Search Box</title>
     <link rel="stylesheet" href="prueba.css" />
+
     <!-- Unicons CSS -->
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
-   <script src="script.js" defer></script>
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+    <script src="script.js" defer></script>
   </head>
   <body>
     <nav class="nav">
       <i class="uil uil-bars navOpenBtn"></i>
-      <a href="#" class="logo">CodingLab</a>
+
+      <div class="logo-container">
+        <a href="#" class="logo">Pope's</a>
+        <img src="./assets/cruz-azul.svg" height="50px" />
+      </div>
 
       <ul class="nav-links">
         <i class="uil uil-times navCloseBtn"></i>
         <li><a href="#">Home</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Products</a></li>
-        <li><a href="#">About Us</a></li>
-        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">-</a></li>
+        <li><a href="#">-</a></li>
+        <li><a href="#">-</a></li>
+        <li><a href="#">-</a></li>
       </ul>
 
       <i class="uil uil-search search-icon" id="searchIcon"></i>
       <div class="search-box">
         <i class="uil uil-search search-icon"></i>
-        <input type="text" placeholder="Search here..." />
+        <input type="text" placeholder="Aún aprendiendo a hacer esto, disculpe las molestias" />
       </div>
     </nav>
+
+    <div class="banner">
+      <div class="left-column">
+        <h1><span>Pope</span></h1>
+        <h3>El <span>mejor</span> pope 🥳</h3>
+        <p>
+          Feliz cumpleaños papá, te hice esta página con mucho cariño para
+          festejarte y expresarte mi gratitud por todo lo que me haz enseñado,
+          espero te guste y tengas un dia muy bonito, muchas gracias por todo.
+          Te quiero mucho. <br />
+          -Quique
+        </p>
+
+        <div class="btn">
+          <button id="btnMostrarImagen" class="hvr-shutter-out-horizontal">Mostrar Imagen</button
+          <a href="./Video/index.html"> <button class="hvr-shutter-out-horizontal" type="button">Video para ti</button></a
+          >
+        </div>
+        <div id="overlay" class="overlay" onclick="cerrarImagen()">
+          <img src="./assets/5LSDCYUUEBD2LFAYRXU2ICOIIA.avif" alt="Imagen a Mostrar" id="imagenMostrada">
+        </div>
+      </div>
+
+      <div class="right-column">
+        <img
+          height=""
+          src="assets/IMG_9066.jpeg"
+          alt=""
+          title="el pope en springfield"
+          class="img-pope"
+        />
+      </div>
+    </div>
   </body>
 </html>

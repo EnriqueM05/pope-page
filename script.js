@@ -20,3 +20,16 @@ navOpenBtn.addEventListener("click", () => {
 navCloseBtn.addEventListener("click", () => {
   nav.classList.remove("openNav");
 });
+
+
+document.getElementById('btnMostrarImagen').addEventListener('click', mostrarImagen);
+
+function mostrarImagen() {
+  var overlay = document.getElementById('overlay');
+  overlay.style.display = 'flex';
+}
+
+function cerrarImagen() {
+  var overlay = document.getElementById('overlay');
+  overlay.style.display = 'none';
+}
